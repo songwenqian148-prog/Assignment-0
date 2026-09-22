@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<title>《明史·太祖本纪》分词统计报告</title>
+<style>
+*{margin:0;padding:0;box-sizing:border-box}
+body{font-family:"Noto Serif SC","Songti SC",serif;background:#f5f1e8;color:#3b2f2f;padding:40px 20px}
+.wrap{max-width:960px;margin:0 auto}
+h1{text-align:center;font-size:28px;letter-spacing:4px;margin-bottom:6px;color:#8b1e1e}
+.sub{text-align:center;color:#7a6a55;margin-bottom:32px;font-size:14px}
+.stats{display:flex;gap:16px;justify-content:center;margin-bottom:36px;flex-wrap:wrap}
+.card{background:#fff;border:1px solid #e0d8c8;border-radius:8px;padding:16px 28px;text-align:center;box-shadow:0 2px 6px rgba(60,40,20,.06)}
+.card b{display:block;font-size:26px;color:#8b1e1e}
+.card span{font-size:13px;color:#7a6a55}
+h2{border-left:6px solid #8b1e1e;padding-left:12px;font-size:20px;margin:36px 0 16px}
+.row{display:flex;align-items:center;margin:6px 0;font-size:14px}
+.label{width:110px;text-align:right;padding-right:10px;white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
+.track{flex:1;background:#eee7d9;border-radius:4px;height:18px;overflow:hidden}
+.fill{height:100%;border-radius:4px}
+.a{background:linear-gradient(90deg,#8b1e1e,#c0392b)}
+.b{background:linear-gradient(90deg,#2c5f8a,#5b9bd5)}
+.c{background:linear-gradient(90deg,#4a6b3a,#8db26a)}
+.val{width:56px;padding-left:8px;font-weight:bold;color:#5a4a3a}
+.grid{display:grid;grid-template-columns:1fr 1fr;gap:24px}
+@media(max-width:760px){.grid{grid-template-columns:1fr}}
+.panel{background:#fff;border:1px solid #e0d8c8;border-radius:8px;padding:20px}
+.analysis{background:#fff;border:1px solid #e0d8c8;border-radius:8px;padding:28px;line-height:1.9;font-size:15px}
+.analysis b{color:#8b1e1e}
+footer{text-align:center;color:#9a8a75;font-size:12px;margin-top:40px}
+</style>
+</head>
+<body><div class="wrap">
+<h1>《明史·太祖本纪》分词统计报告</h1>
+<div class="sub">基于 jieba 中文分词 · 繁体自动转简体 · 过滤虚词与时间干支</div>
+
+<div class="stats">
+<div class="card"><b>23495</b><span>原文总字符</span></div>
+<div class="card"><b>5812</b><span>过滤后词次</span></div>
+<div class="card"><b>3367</b><span>不重复词汇</span></div>
+<div class="card"><b>547</b><span>识别人物</span></div>
+<div class="card"><b>330</b><span>识别地名</span></div>
+</div>
+
+<h2>高频实词 TOP20</h2>
+<div class="row"><span class="label">太祖</span><div class="track"><div class="fill a" style="width:100.0%"></div></div><span class="val">67</span></div><div class="row"><span class="label">徐达</span><div class="track"><div class="fill a" style="width:77.6%"></div></div><span class="val">52</span></div><div class="row"><span class="label">天下</span><div class="track"><div class="fill a" style="width:68.7%"></div></div><span class="val">46</span></div><div class="row"><span class="label">傅友德</span><div class="track"><div class="fill a" style="width:46.3%"></div></div><span class="val">31</span></div><div class="row"><span class="label">河南</span><div class="track"><div class="fill a" style="width:46.3%"></div></div><span class="val">31</span></div><div class="row"><span class="label">将军</span><div class="track"><div class="fill a" style="width:44.8%"></div></div><span class="val">30</span></div><div class="row"><span class="label">田租</span><div class="track"><div class="fill a" style="width:43.3%"></div></div><span class="val">29</span></div><div class="row"><span class="label">北平</span><div class="track"><div class="fill a" style="width:43.3%"></div></div><span class="val">29</span></div><div class="row"><span class="label">冯胜</span><div class="track"><div class="fill a" style="width:40.3%"></div></div><span class="val">27</span></div><div class="row"><span class="label">汤和</span><div class="track"><div class="fill a" style="width:38.8%"></div></div><span class="val">26</span></div><div class="row"><span class="label">常遇春</span><div class="track"><div class="fill a" style="width:38.8%"></div></div><span class="val">26</span></div><div class="row"><span class="label">都督</span><div class="track"><div class="fill a" style="width:37.3%"></div></div><span class="val">25</span></div><div class="row"><span class="label">蓝玉</span><div class="track"><div class="fill a" style="width:35.8%"></div></div><span class="val">24</span></div><div class="row"><span class="label">天地</span><div class="track"><div class="fill a" style="width:32.8%"></div></div><span class="val">22</span></div><div class="row"><span class="label">南郊</span><div class="track"><div class="fill a" style="width:32.8%"></div></div><span class="val">22</span></div><div class="row"><span class="label">应天</span><div class="track"><div class="fill a" style="width:31.3%"></div></div><span class="val">21</span></div><div class="row"><span class="label">陈友谅</span><div class="track"><div class="fill a" style="width:31.3%"></div></div><span class="val">21</span></div><div class="row"><span class="label">李文忠</span><div class="track"><div class="fill a" style="width:31.3%"></div></div><span class="val">21</span></div><div class="row"><span class="label">入贡</span><div class="track"><div class="fill a" style="width:31.3%"></div></div><span class="val">21</span></div><div class="row"><span class="label">山东</span><div class="track"><div class="fill a" style="width:29.9%"></div></div><span class="val">20</span></div>
+
+<div class="grid">
+<div>
+<h2>人物（官员/将帅）TOP20</h2>
+<div class="row"><span class="label">徐达</span><div class="track"><div class="fill b" style="width:100.0%"></div></div><span class="val">62</span></div><div class="row"><span class="label">傅友德</span><div class="track"><div class="fill b" style="width:50.0%"></div></div><span class="val">31</span></div><div class="row"><span class="label">冯胜</span><div class="track"><div class="fill b" style="width:45.2%"></div></div><span class="val">28</span></div><div class="row"><span class="label">汤和</span><div class="track"><div class="fill b" style="width:41.9%"></div></div><span class="val">26</span></div><div class="row"><span class="label">张士诚</span><div class="track"><div class="fill b" style="width:41.9%"></div></div><span class="val">26</span></div><div class="row"><span class="label">蓝玉</span><div class="track"><div class="fill b" style="width:38.7%"></div></div><span class="val">24</span></div><div class="row"><span class="label">陈友谅</span><div class="track"><div class="fill b" style="width:38.7%"></div></div><span class="val">24</span></div><div class="row"><span class="label">常遇春</span><div class="track"><div class="fill b" style="width:37.1%"></div></div><span class="val">23</span></div><div class="row"><span class="label">李文忠</span><div class="track"><div class="fill b" style="width:33.9%"></div></div><span class="val">21</span></div><div class="row"><span class="label">邓愈</span><div class="track"><div class="fill b" style="width:27.4%"></div></div><span class="val">17</span></div><div class="row"><span class="label">沐英</span><div class="track"><div class="fill b" style="width:22.6%"></div></div><span class="val">14</span></div><div class="row"><span class="label">李善长</span><div class="track"><div class="fill b" style="width:19.4%"></div></div><span class="val">12</span></div><div class="row"><span class="label">扩廓帖木儿</span><div class="track"><div class="fill b" style="width:16.1%"></div></div><span class="val">10</span></div><div class="row"><span class="label">周德兴</span><div class="track"><div class="fill b" style="width:14.5%"></div></div><span class="val">9</span></div><div class="row"><span class="label">方国珍</span><div class="track"><div class="fill b" style="width:12.9%"></div></div><span class="val">8</span></div><div class="row"><span class="label">廖永忠</span><div class="track"><div class="fill b" style="width:12.9%"></div></div><span class="val">8</span></div><div class="row"><span class="label">明升</span><div class="track"><div class="fill b" style="width:12.9%"></div></div><span class="val">8</span></div><div class="row"><span class="label">朱亮祖</span><div class="track"><div class="fill b" style="width:11.3%"></div></div><span class="val">7</span></div><div class="row"><span class="label">纳哈出</span><div class="track"><div class="fill b" style="width:11.3%"></div></div><span class="val">7</span></div><div class="row"><span class="label">杨璟</span><div class="track"><div class="fill b" style="width:11.3%"></div></div><span class="val">7</span></div>
+</div>
+<div>
+<h2>地名 TOP20</h2>
+<div class="row"><span class="label">河南</span><div class="track"><div class="fill c" style="width:100.0%"></div></div><span class="val">30</span></div><div class="row"><span class="label">北平</span><div class="track"><div class="fill c" style="width:96.7%"></div></div><span class="val">29</span></div><div class="row"><span class="label">应天</span><div class="track"><div class="fill c" style="width:73.3%"></div></div><span class="val">22</span></div><div class="row"><span class="label">太平</span><div class="track"><div class="fill c" style="width:66.7%"></div></div><span class="val">20</span></div><div class="row"><span class="label">山东</span><div class="track"><div class="fill c" style="width:66.7%"></div></div><span class="val">20</span></div><div class="row"><span class="label">山西</span><div class="track"><div class="fill c" style="width:66.7%"></div></div><span class="val">20</span></div><div class="row"><span class="label">高丽</span><div class="track"><div class="fill c" style="width:63.3%"></div></div><span class="val">19</span></div><div class="row"><span class="label">陕西</span><div class="track"><div class="fill c" style="width:60.0%"></div></div><span class="val">18</span></div><div class="row"><span class="label">安南</span><div class="track"><div class="fill c" style="width:56.7%"></div></div><span class="val">17</span></div><div class="row"><span class="label">占城</span><div class="track"><div class="fill c" style="width:50.0%"></div></div><span class="val">15</span></div><div class="row"><span class="label">暹罗</span><div class="track"><div class="fill c" style="width:46.7%"></div></div><span class="val">14</span></div><div class="row"><span class="label">镇江</span><div class="track"><div class="fill c" style="width:40.0%"></div></div><span class="val">12</span></div><div class="row"><span class="label">琉球</span><div class="track"><div class="fill c" style="width:40.0%"></div></div><span class="val">12</span></div><div class="row"><span class="label">宁国</span><div class="track"><div class="fill c" style="width:33.3%"></div></div><span class="val">10</span></div><div class="row"><span class="label">延安</span><div class="track"><div class="fill c" style="width:30.0%"></div></div><span class="val">9</span></div><div class="row"><span class="label">中都</span><div class="track"><div class="fill c" style="width:30.0%"></div></div><span class="val">9</span></div><div class="row"><span class="label">湖广</span><div class="track"><div class="fill c" style="width:30.0%"></div></div><span class="val">9</span></div><div class="row"><span class="label">开封</span><div class="track"><div class="fill c" style="width:30.0%"></div></div><span class="val">9</span></div><div class="row"><span class="label">凤阳</span><div class="track"><div class="fill c" style="width:26.7%"></div></div><span class="val">8</span></div><div class="row"><span class="label">辽东</span><div class="track"><div class="fill c" style="width:26.7%"></div></div><span class="val">8</span></div>
+</div>
+</div>
+
+<h2>简要分析</h2>
+<div class="analysis">
+<p><b>人物分布：</b>太祖本纪叙事以军事为主线，高频人物集中于开国将帅与谋臣
+（徐达、常遇春、李善长、刘基等），以及最重要的对手陈友谅、张士诚、扩廓帖木儿（王保保）。
+元廷人物（脱脱、察罕帖木儿）与降将亦频繁出现，体现洪武初年与北元的长期对峙。</p>
+<p><b>地名分布：</b>高频地名呈"由南向北、由江入淮"的推进格局：应天（集庆）、太平、镇江、常州
+等长江下游城市是渡江建国阶段的根据地；武昌、江州、鄱阳湖对应与陈友谅的决战；大都、北平、
+辽东、漠北则对应洪武年间北伐与扫荡北元残余的战场。</p>
+<p><b>空间脉络：</b>淮西起兵 → 渡江取集庆 → 西灭陈友谅 → 东灭张士诚 → 南平闽广 →
+北逐元廷，地名频次的重心随叙事阶段自长江中下游向北方边疆递延，人物构成亦由开国功臣
+转向北伐诸将与后期执政大臣，与纪传体叙事节奏高度一致。</p>
+</div>
+
+<footer>明史·太祖本纪（卷一~卷三） | jieba 分词 · 词性标注 · 词频统计 自动生成</footer>
+</div></body></html>
